@@ -13,4 +13,4 @@ await contract.Fal1out()
 ```
 
 ## Takeaway
-This level predates Solidity 0.4.22, when constructors were defined by naming a function after the contract. A single typo left it callable by anyone. The `constructor` keyword in modern Solidity removes this whole class of mistake.
+This level comes before Solidity 0.4.22, when constructors were defined by naming a function after the contract. A single typo left it callable by anyone. The `constructor` keyword in modern Solidity removes this whole class of mistake.

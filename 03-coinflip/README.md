@@ -12,4 +12,4 @@ See [`CoinFlip.sol`](./CoinFlip.sol). The attacker contract recomputes the flip 
 Because the attack contract and the target read the same `blockhash` in the same transaction, the guess always matches. Call this 10 times across separate blocks to reach 10 consecutive wins.
 
 ## Takeaway
-Block values like `blockhash`, `block.timestamp`, and `block.number` are not secret and can be read or reproduced by any contract, so they can't be used as randomness. Secure randomness on-chain requires an external source such as a verifiable random function (e.g. Chainlink VRF) or a commit-reveal scheme.
+Block values like `blockhash`, `block.timestamp`, and `block.number` are not secret and can be read or reproduced by any contract, so they can't be used as randomness. Secure randomness on-chain requires an external source such as a verifiable random function, such as a Chainlink VRF, or a commit-reveal scheme.
